@@ -2,6 +2,8 @@
 
 Rather than hard-coding the username/passwords that are valid, let's have an Entity class `User` and a corresponding database table `user`.
 
+![users in DB](screenshots/db_users.png)
+
 - Create a `User` Entity class with private properties and getters/setters for id / username / password
 
     - we'll also add the special SQL string constant to make it easy to create the DB table
@@ -164,7 +166,7 @@ Rather than hard-coding the username/passwords that are valid, let's have an Ent
     --------------- DatabaseTableRepository->createTable() ----------------
     NOTE:: Looking for a constant CREATE_TABLE_SQL defined in the entity class associated with this repository
     -----------------------------------------------------------------------
-    <pre>/Users/matt/Documents/github/evote-2020/evote-movie-2020-14-db-users/db/migrateAndLoadUserFixtures.php:33:
+    <pre>db/migrateAndLoadUserFixtures.php:33:
     array(2) {
       [0] =>
       class Tudublin\User#8 (3) {
