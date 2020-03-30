@@ -64,6 +64,7 @@ class LoginController extends Controller
         print '<hr>';
         var_dump($user);
         print '<hr>';
+        die();
 
         if($user) {
             $passwordFromDatabase = $user->getPassword();
