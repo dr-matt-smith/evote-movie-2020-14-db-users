@@ -61,6 +61,10 @@ class LoginController extends Controller
         $userRepository = new UserRepository();
         $user = $userRepository->getUserByUserName($username);
 
+        print '<hr>';
+        var_dump($user);
+        print '<hr>';
+
         if($user) {
             $passwordFromDatabase = $user->getPassword();
             if($password == $passwordFromDatabase){
